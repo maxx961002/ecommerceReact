@@ -1,13 +1,21 @@
-import './App.css'
+import "./App.css";
+import zapatillas from "./zapatillas";
+import Producto from "./producto.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-   <div>
-    <h1>Hola</h1>
-   </div>
-  )
+    <div className="App">
+      <header className="banner">
+        <h1>Mi Tienda de Zapatillas</h1>
+      </header>
+      <main className="lista">
+        {zapatillas.map(z => (
+          <Producto key={z.id} data={z} />
+        ))}
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
+
