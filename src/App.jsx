@@ -1,20 +1,14 @@
 import "./App.css";
-import zapatillas from "./zapatillas";
-import Producto from "./producto.jsx";
+import NavBar from "./components/NavBar";
+import ItemListContainer from "./components/ItemListContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="banner">
-        <h1>Mi Tienda de Zapatillas</h1>
-      </header>
-      <main className="lista">
-        {zapatillas.map(z => (
-          <Producto key={z.id} data={z} />
-        ))}
-      </main>
-    </div>
-  );
+    <>
+      <NavBar />
+      <ItemListContainer greeting="¡Bienvenido a URBAIR!" />
+    </>
+  )
 }
 
 export default App;

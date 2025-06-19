@@ -1,0 +1,79 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #204425e5;
+}
+
+h1, h2, h3, .logo-text {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #8ca07dbe;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-left,
+.nav-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.nav-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.logo {
+  height: 70px;
+  margin-left: auto;
+  border-radius: 50%;
+}
+
+.cart-widget {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.cart-widget {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  width: 60px;
+  height: auto;
+  border-radius: 70%;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 40%;
+  font-weight: bold;
+}
+ h3 {
+  font-size: 1.5rem;
+  color: #000000;
+  text-align: center;
+  margin-top: 20px;
+ }
