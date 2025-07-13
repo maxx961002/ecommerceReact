@@ -12,68 +12,105 @@ h1, h2, h3, .logo-text {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #8ca07dbe;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #6c7a58;
+  padding: 10px 30px;
 }
 
-.nav-left,
-.nav-right {
+.navbar-left,
+.navbar-right {
   flex: 1;
   display: flex;
   align-items: center;
 }
 
-.nav-center {
+.navbar-center {
   flex: 2;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .nav-links {
-  display: flex;
   list-style: none;
-  gap: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.logo {
-  height: 70px;
-  margin-left: auto;
-  border-radius: 50%;
-}
-
-.cart-widget {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-.cart-widget {
-  position: relative;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
-.cart-icon {
-  width: 60px;
-  height: auto;
-  border-radius: 70%;
+.nav-links li {
+  position: relative;
 }
 
-.cart-count {
-  position: absolute;
-  top: -8px;
-  right: -10px;
-  background-color: red;
-  color: white;
-  font-size: 0.7rem;
-  padding: 2px 6px;
-  border-radius: 40%;
+.nav-links a {
+  text-decoration: none;
+  color: black;
   font-weight: bold;
 }
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 25px;
+  background-color: #e2e2e2;
+  list-style: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carrito-icon {
+  height: 30px;
+}
+
+.logo-icon {
+  height: 40px;
+  margin-left: auto;
+}
+
+.video-banner {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.video-banner video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
  h3 {
   font-size: 1.5rem;
   color: #000000;
   text-align: center;
   margin-top: 20px;
  }
+ .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.product-card {
+  background-color: #6c7a58;
+  color: #000;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}

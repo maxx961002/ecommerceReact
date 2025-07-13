@@ -1,27 +1,42 @@
-// src/components/NavBar.jsx
-import CartWidget from "./CartWidget"
+import { Link } from "react-router-dom"
+import carrito from "../img/carritoUrbair.png"
 import logo from "../img/logoUrbair.png"
 
 function NavBar() {
   return (
-    <nav className="navbar">
-      <div className="nav-left">
-        <CartWidget />
+    <header className="navbar">
+      <div className="navbar-left">
+        <Link to="/carrito">
+          <img src={carrito} alt="Carrito" className="carrito-icon" />
+        </Link>
       </div>
 
-      <div className="nav-center">
-        <ul className="nav-links">
-          <li>Inicio</li>
-          <li>Productos</li>
-          <li>Nosotros</li>
-        </ul>
-      </div>
+     <nav className="navbar-center">
+  <ul className="nav-links">
+    <li><Link to="/">Inicio</Link></li>
 
-      <div className="nav-right">
-        <img src={logo} alt="URBAIR" className="logo" />
+    <li className="dropdown">
+      <span>Categorías</span>
+      <ul className="dropdown-menu">
+        <li><Link to="/">Todas</Link></li>
+        <li><Link to="/categoria/urbanas">Urbanas</Link></li>
+        <li><Link to="/categoria/deportivas">Deportivas</Link></li>
+      </ul>
+    </li>
+
+    <li><Link to="/nosotros">Nosotros</Link></li>
+  </ul>
+</nav>
+
+      <div className="navbar-right">
+        <Link to="/">
+          <img src={logo} alt="Logo Urbair" className="logo-icon" />
+        </Link>
       </div>
-    </nav>
+    </header>
   )
 }
 
 export default NavBar
+
+
