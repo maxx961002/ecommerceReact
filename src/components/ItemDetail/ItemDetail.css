@@ -1,0 +1,89 @@
+.detalle-container {
+  display: flex;
+  margin-top: 50px;
+  gap: 20px;
+  padding: 50px;
+  background-color: #3046be9d;
+  color: #ffc400;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.miniaturas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.miniatura {
+  width: 70px;
+  height: auto;
+  border: 1px solid #ffc400;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.imagen-principal img {
+  width: 350px;
+  height: auto;
+  border: 1px solid #ffc400;
+  border-radius: 20px;
+}
+
+.info-producto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+}
+
+.precio {
+  font-size: 24px;
+  color: #ffc400;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.comprar, .carrito {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.comprar {
+  background-color: #ff6600;
+  color: white;
+}
+
+.carrito {
+  background-color: #0066ff;
+  color: white;
+}
+
+.contador {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.contador button {
+  padding: 5px 10px;
+  background-color: #ffc400;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contador span {
+  font-size: 18px;
+  color: #ffc400;
+}

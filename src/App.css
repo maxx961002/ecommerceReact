@@ -1,6 +1,8 @@
+/* App.css - Deja estilos generales compartidos por toda la app */
+
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #204425e5;
+  background-color: #000000;
 }
 
 h1, h2, h3, .logo-text {
@@ -8,64 +10,11 @@ h1, h2, h3, .logo-text {
   letter-spacing: 2px;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #6c7a58;
-  padding: 10px 30px;
-}
-
-.navbar-left,
-.navbar-right {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
-.navbar-center {
-  flex: 2;
+h3 {
+  font-size: 1.5rem;
+  color: #ffc400;
   text-align: center;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-.nav-links li {
-  position: relative;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 25px;
-  background-color: #e2e2e2;
-  list-style: none;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.carrito-icon {
-  height: 30px;
-}
-
-.logo-icon {
-  height: 40px;
-  margin-left: auto;
+  margin-top: 20px;
 }
 
 .video-banner {
@@ -79,38 +28,4 @@ h1, h2, h3, .logo-text {
   height: auto;
   object-fit: cover;
   border-radius: 12px;
-}
-
- h3 {
-  font-size: 1.5rem;
-  color: #000000;
-  text-align: center;
-  margin-top: 20px;
- }
- .product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 30px;
-}
-
-.product-card {
-  background-color: #6c7a58;
-  color: #000;
-  border-radius: 12px;
-  padding: 16px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease;
-}
-
-.product-card:hover {
-  transform: scale(1.05);
-}
-
-.product-img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
 }

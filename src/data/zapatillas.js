@@ -4,6 +4,7 @@ const zapatillas = [
     nombre: "Air Max",
     precio: 15000,
     categoria: "urbanas",
+    stock: 10,
     img: [
       "/zapas/airMax.png",
       "/zapas/airMax-1.png",
@@ -15,6 +16,7 @@ const zapatillas = [
     nombre: "Air Max Negra",
     precio: 15000,
     categoria: "urbanas",
+    stock: 8,
     img: [
       "/zapas/airMax_negra.png",
       "/zapas/airMax_negra-1.png",
@@ -26,6 +28,7 @@ const zapatillas = [
     nombre: "Air Force 1",
     precio: 16000,
     categoria: "urbanas",
+    stock: 5,
     img: [
       "/zapas/airForce1.png",
       "/zapas/airForce1-2.png",
@@ -37,6 +40,7 @@ const zapatillas = [
     nombre: "Air Force 1 Negra",
     precio: 16000,
     categoria: "urbanas",
+    stock: 7,
     img: [
       "/zapas/airForce1-negra.png",
       "/zapas/airForce1-2-negra.png",
@@ -48,6 +52,7 @@ const zapatillas = [
     nombre: "Jordan Blanca",
     precio: 20000,
     categoria: "urbanas",
+    stock: 6,
     img: [
       "/zapas/jordanBlanca.png",
       "/zapas/jordanBlanca-1.png",
@@ -59,6 +64,7 @@ const zapatillas = [
     nombre: "Jordan Negra",
     precio: 20000,
     categoria: "urbanas",
+    stock: 4,
     img: [
       "/zapas/jordanNegra.png",
       "/zapas/jordanNegra-1.png",
@@ -70,6 +76,7 @@ const zapatillas = [
     nombre: "Running Blanca",
     precio: 18000,
     categoria: "deportivas",
+    stock: 12,
     img: [
       "/zapas/runningBlanca.png",
       "/zapas/runningBlanca-1.png",
@@ -81,6 +88,7 @@ const zapatillas = [
     nombre: "Running Negra",
     precio: 18000,
     categoria: "deportivas",
+    stock: 9,
     img: [
       "/zapas/runningNegra.png",
       "/zapas/runningNegra-1.png",
@@ -92,6 +100,7 @@ const zapatillas = [
     nombre: "Lebron",
     precio: 22000,
     categoria: "deportivas",
+    stock: 3,
     img: [
       "/zapas/lebron.png",
       "/zapas/lebron-1.png",
@@ -100,9 +109,10 @@ const zapatillas = [
   },
   {
     id: 10,
-    nombre: "Basquet Negra",
+    nombre: "Basquet Clasica Negra",
     precio: 17000,
     categoria: "deportivas",
+    stock: 2,
     img: [
       "/zapas/basquetNegra.png",
       "/zapas/basquetNegra-1.png",

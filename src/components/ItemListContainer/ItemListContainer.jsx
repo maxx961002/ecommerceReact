@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import ItemList from "./ItemList"
-import zapatillas from "../data/zapatillas"
+import ItemList from "../ItemList/ItemList"
+import zapatillas from "../../data/zapatillas"
+import "./ItemListContainer.css"
+
 
 function ItemListContainer({ greeting }) {
   const [productos, setProductos] = useState([])
@@ -30,7 +32,6 @@ function ItemListContainer({ greeting }) {
         </video>
       </div>
 
-
       <h3>{greeting}</h3>
       <ItemList items={productos} />
     </section>
@@ -38,5 +39,3 @@ function ItemListContainer({ greeting }) {
 }
 
 export default ItemListContainer
-
-

@@ -1,9 +1,8 @@
 import './App.css'
-import NavBar from './components/NavBar'
-import ItemListContainer from './components/ItemListContainer'
+import NavBar from './components/NavBar/NavBar'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import ItemDetail from './components/ItemDetail/ItemDetail'
 import { Routes, Route } from 'react-router-dom'
-
-
 
 function App() {
   return (
@@ -12,9 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<ItemListContainer saludo="¡Bienvenido a URBAIR!" />} />
         <Route path="/categoria/:categoriaId" element={<ItemListContainer saludo="Filtrado por categoría" />} />
-        <Route path="/producto/:productoId" element={<div>Detalle del producto</div>} />
+        <Route path="/producto/:productoId" element={<ItemDetail />} />
         <Route path="*" element={<h2>404 - Página no encontrada</h2>} />
-        <Route path="/categoria/:categoriaId" element={<ItemListContainer />} />
       </Routes>
     </>
   )

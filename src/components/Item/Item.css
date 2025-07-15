@@ -1,0 +1,38 @@
+.item-card {
+  background-color: #3046be9d;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.item-card:hover {
+  transform: scale(1.03);
+}
+
+.item-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.item-card h3 {
+  color: #ffc400;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.item-card p {
+  color: #ffc400;
+  font-size: 16px;
+}
+
+.item-card .ver-mas {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #ffc400;
+  font-weight: bold;
+}
